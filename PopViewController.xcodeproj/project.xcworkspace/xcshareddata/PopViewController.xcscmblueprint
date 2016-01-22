@@ -1,0 +1,24 @@
+{
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "7698e39a-fcd4-4b51-aec0-4ad1ea859386++8991" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "7698e39a-fcd4-4b51-aec0-4ad1ea859386++8991" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "E978878A-B7DA-42AB-830B-C1D05388EC14",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "7698e39a-fcd4-4b51-aec0-4ad1ea859386++8991" : "PopViewController\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "PopViewController",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "PopViewController.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "svn:\/\/192.168.1.112\/weekly",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7698e39a-fcd4-4b51-aec0-4ad1ea859386++8991"
+    }
+  ]
+}
