@@ -25,6 +25,9 @@
 #import "ButtonShakeAniVC.h"
 #import "DynamicCardViewController.h"
 #import "Cards3DViewController.h"
+#import "DynamicViewController.h"
+#import "DynamicLabelVC.h"
+#import "VoiceVCViewController.h"
 
 @interface ViewController ()
 {
@@ -76,6 +79,9 @@
     [self popAniBtn];
     [self dynamicCardsBtn];
     [self CardsOf3DBtn];
+    [self dynamic];
+    [self dynamicLabel];
+    [self dynamicVoice];
 }
 
 - (void )addPushButton {
@@ -339,6 +345,58 @@
     Cards3DViewController *vc = [Cards3DViewController new];
     vc.navigationController.fd_fullscreenPopGestureRecognizer.enabled = NO;
     [self.navigationController pushViewController:[Cards3DViewController new] animated:YES];
+}
+
+- (void)dynamic {
+    
+    UIButton *cardsBtn = [UIButton getButtonWithTitle:@"dynamic" titleColor:[UIColor whiteColor] textFont:[UIFont systemFontOfSize:15.0f] backgroundColor:[UIColor colorWithRed:0.203 green:0.219 blue:0.724 alpha:1.000]];
+    cardsBtn.tag = 115;
+    UIButton *cardBtn = [self.view viewWithTag:111];
+    cardsBtn.top = cardBtn.bottom + 10;
+    cardsBtn.left = cardBtn.left;
+    [cardsBtn addTarget:self action:@selector(dynamicBtnTap) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:cardsBtn];
+}
+
+- (void)dynamicBtnTap {
+    
+    DynamicViewController *vc = [DynamicViewController new];
+    vc.navigationController.fd_fullscreenPopGestureRecognizer.enabled = NO;
+    [self.navigationController pushViewController:[DynamicViewController new] animated:YES];
+}
+
+- (void)dynamicLabel {
+    
+    UIButton *labelBtn = [UIButton getButtonWithTitle:@"labelBtn" titleColor:[UIColor whiteColor] textFont:[UIFont systemFontOfSize:15.0f] backgroundColor:[UIColor colorWithRed:0.724 green:0.476 blue:0.360 alpha:1.000]];
+    labelBtn.tag = 116;
+    UIButton *cardBtn = [self.view viewWithTag:115];
+    labelBtn.top = cardBtn.top;
+    labelBtn.left = cardBtn.right + 10;
+    [labelBtn addTarget:self action:@selector(labelBtnTap) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:labelBtn];
+}
+
+- (void)labelBtnTap {
+    
+    DynamicLabelVC *vc = [DynamicLabelVC new];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (void)dynamicVoice {
+    
+    UIButton *voiceBtn = [UIButton getButtonWithTitle:@"voiceBtn" titleColor:[UIColor whiteColor] textFont:[UIFont systemFontOfSize:15.0f] backgroundColor:[UIColor colorWithRed:0.724 green:0.476 blue:0.360 alpha:1.000]];
+    voiceBtn.tag = 117;
+    UIButton *labelBtn = [self.view viewWithTag:116];
+    voiceBtn.top = labelBtn.top;
+    voiceBtn.left = labelBtn.right + 10;
+    [voiceBtn addTarget:self action:@selector(voiceBtnTap) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:voiceBtn];
+}
+
+- (void)voiceBtnTap {
+    
+    VoiceVCViewController *vc = [VoiceVCViewController new];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

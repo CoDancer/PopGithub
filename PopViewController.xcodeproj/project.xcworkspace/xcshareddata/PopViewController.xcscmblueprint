@@ -1,14 +1,17 @@
 {
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "E4F1C72BE0F0D7A50953658EAED42B28938E9261",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
     "7698e39a-fcd4-4b51-aec0-4ad1ea859386++8991" : {
 
     }
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "E4F1C72BE0F0D7A50953658EAED42B28938E9261" : 0,
     "7698e39a-fcd4-4b51-aec0-4ad1ea859386++8991" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "E978878A-B7DA-42AB-830B-C1D05388EC14",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "E4F1C72BE0F0D7A50953658EAED42B28938E9261" : "PopGithub\/",
     "7698e39a-fcd4-4b51-aec0-4ad1ea859386++8991" : "PopViewController\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "PopViewController",
@@ -19,6 +22,11 @@
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "svn:\/\/192.168.1.112\/weekly",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7698e39a-fcd4-4b51-aec0-4ad1ea859386++8991"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/CoDancer\/PopGithub.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E4F1C72BE0F0D7A50953658EAED42B28938E9261"
     }
   ]
 }

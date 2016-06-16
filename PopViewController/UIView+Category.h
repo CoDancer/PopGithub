@@ -40,4 +40,8 @@
 
 - (UIView *)getDifferentViewWithFrame:(CGRect)frame BGC:(UIColor *)color weatherCor:(BOOL)isCornerRadius;
 
+- (CAShapeLayer *)layerCornerRadius:(CGFloat)radius borderWidth:(CGFloat)width;
+
+- (void)addRoundCorners;
+
 @end

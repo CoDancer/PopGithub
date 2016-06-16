@@ -158,4 +158,34 @@
     return view;
 }
 
+- (CAShapeLayer *)layerCornerRadius:(CGFloat)radius borderWidth:(CGFloat)width {
+    
+    CAShapeLayer *maskLayer = [CAShapeLayer layer];
+    maskLayer.fillColor = [UIColor clearColor].CGColor;
+    maskLayer.strokeColor = [UIColor whiteColor].CGColor;
+    maskLayer.lineWidth = width;
+    UIBezierPath *maskPath = [UIBezierPath bezierPath];
+    [maskPath addArcWithCenter:CGPointMake(self.bounds.size.width - radius, self.bounds.size.height - radius) radius:radius startAngle:0 endAngle:M_PI_2 clockwise:YES];
+    maskLayer.path = maskPath.CGPath;
+    self.layer.mask = maskLayer;
+    return maskLayer;
+}
+
+- (void)addRoundCorners {
+    
+    UIBezierPath *path = [UIBezierPath bezierPathWithRoundedRect:self.bounds cornerRadius:self.height/2.0];
+    CAShapeLayer *mask = [CAShapeLayer layer];
+    mask.frame = self.bounds;
+    mask.path = path.CGPath;
+    self.layer.mask = mask;
+    
+    CAShapeLayer *border = [CAShapeLayer layer];
+    border.frame = self.bounds;
+    border.path = path.CGPath;
+    border.lineWidth = 3.0;
+    border.fillColor = [UIColor clearColor].CGColor;
+    border.strokeColor = [UIColor whiteColor].CGColor;
+    [self.layer addSublayer:border];
+}
+
 @end
